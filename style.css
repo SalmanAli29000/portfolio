@@ -391,3 +391,32 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+/* Make the image responsive across all devices */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .responsive-image {
+    width: auto; /* Default size for smaller devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .responsive-image {
+      width: auto; /* Width based on viewport width for larger screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .responsive-image {
+      width: auto; /* Further reduce image size on even larger screens */
+      height: auto;
+    }
+  }
+  
